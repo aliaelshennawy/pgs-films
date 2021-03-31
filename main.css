@@ -1,0 +1,284 @@
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+}
+h1 {
+  text-transform: uppercase;
+  text-align: center;
+  margin-block: 40px;
+  font-weight: 700;
+}
+h1::after {
+  right: 0;
+  display: block;
+  width: 400px;
+  height: 2px;
+  background-color: black;
+}
+.main-logo {
+  width: 220px;
+  margin: 0 auto;
+  margin-top: 20px;
+}
+.home-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+.home-wrapper .col {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.details-wrapper {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.map-wrapper {
+  margin-block: 40px;
+}
+.map-wrapper .row + .row {
+  margin-top: 20px;
+}
+.map-wrapper img {
+  width: 100%;
+}
+.call-to-action {
+  display: inline-block;
+  color: #fff;
+  height: 45px;
+  width: 35%;
+  font-weight: 400;
+  letter-spacing: 1px;
+  text-decoration: none;
+  line-height: 45px;
+  text-align: center;
+  margin: 0 auto;
+  border-radius: 5px;
+  background-color: #d8462f;
+  background-image: url('assets/down-arrow.png');
+  background-size: 30px 30px;
+  background-repeat: no-repeat;
+  background-position-x: 5%;
+  background-position-y: center;
+}
+.home-wrapper img {
+  width: 200px;
+  vertical-align: middle;
+  text-align: center;
+}
+.home-wrapper .row + .row {
+  margin-block: 40px;
+}
+.details-wrapper .row {
+  margin-block: 40px;
+}
+.details-wrapper img {
+  width: 100%;
+}
+.col .centered {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.map-wrapper h3 {
+  font-weight: bold;
+  font-size: 24px;
+}
+.alaska h3 {
+  color: #41513d;
+}
+.map-title-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.alaska .map-title-wrapper:before {
+  content: '';
+  display: inline-block;
+  width: 80px;
+  height: 80px;
+  vertical-align: middle;
+  background-image: url('assets/target-alaska.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin-inline-end: 5px;
+}
+.nevada h3 , p {
+  color: #eba633;
+}
+.nevada .map-title-wrapper:before {
+  content: '';
+  display: inline-block;
+  width: 60px;
+  height: 60px;
+  vertical-align: middle;
+  background-image: url('assets/target-nevada.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin-inline-end: 5px;
+}
+.west-russia h3 {
+ color:  #f6ed08;
+}
+.russia-north h3 {
+  color: #32449c;
+}
+.calfornia h3 {
+  color: #780945;
+}
+.missouri h3 {
+  color: #331748;
+}
+.montana h3 {
+  color: #e8aa8f;
+}
+.georgia h3 {
+  color: #bd4626;
+}
+.hawaii {
+  color: #5d3641;
+}
+.guam {
+  color: #b23422;
+}
+.japan {
+  color:#6b1d1f;
+}
+.texas {
+  color:#f4e0e8;
+}
+.west-russia  .map-title-wrapper:before {
+  content: '';
+  display: inline-block;
+  width: 60px;
+  height: 60px;
+  vertical-align: middle;
+  background-image: url('assets/target-west-russia.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin-inline-end: 5px;
+}
+.calfornia .map-title-wrapper:before {
+  content: '';
+  display: inline-block;
+  width: 60px;
+  height: 60px;
+  vertical-align: middle;
+  background-image: url('assets/target-cafornia.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin-inline-end: 5px;
+}
+.missouri .map-title-wrapper:before {
+  content: '';
+  display: inline-block;
+  width: 60px;
+  height: 60px;
+  vertical-align: middle;
+  background-image: url('assets/target-missouri.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin-inline-end: 5px;
+}
+.russia-north .map-title-wrapper:before {
+  content: '';
+  display: inline-block;
+  width: 60px;
+  height: 60px;
+  vertical-align: middle;
+  background-image: url('assets/target-east-russia.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin-inline-end: 5px;
+}
+.montana .map-title-wrapper:before {
+  content: '';
+  display: inline-block;
+  width: 60px;
+  height: 60px;
+  vertical-align: middle;
+  background-image: url('assets/target-montana.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin-inline-end: 5px;
+}
+.georgia .map-title-wrapper:before {
+  content: '';
+  display: inline-block;
+  width: 60px;
+  height: 60px;
+  vertical-align: middle;
+  background-image: url('assets/target-georgia.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin-inline-end: 5px;
+}
+.hawaii .map-title-wrapper:before {
+  content: '';
+  display: inline-block;
+  width: 60px;
+  height: 60px;
+  vertical-align: middle;
+  background-image: url('assets/target-hawaii.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin-inline-end: 5px;
+}
+.japan .map-title-wrapper:before {
+  content: '';
+  display: inline-block;
+  width: 60px;
+  height: 60px;
+  vertical-align: middle;
+  background-image: url('assets/target-japan.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin-inline-end: 5px;
+}
+.guam .map-title-wrapper:before {
+  content: '';
+  display: inline-block;
+  width: 60px;
+  height: 60px;
+  vertical-align: middle;
+  background-image: url('assets/target-guam.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin-inline-end: 5px;
+}
+.texas .map-title-wrapper:before {
+  content: '';
+  display: inline-block;
+  width: 60px;
+  height: 60px;
+  vertical-align: middle;
+  background-image: url('assets/target-texas.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin-inline-end: 5px;
+}
+p  {
+  color: inherit
+}
+@media (max-width: 768px) {
+  .details-wrapper .row {
+    display: flex;
+    flex-direction: column;
+  } 
+  .details-wrapper img {
+    margin-bottom: 20px;
+  }
+  .call-to-action {
+    width: 90%;
+  }
+  .map-wrapper .col {
+    flex: 100%;
+  }
+}
