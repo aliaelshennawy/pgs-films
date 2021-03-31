@@ -93,6 +93,9 @@ h1::after {
 .home-wrapper .content img {
   width: 200px;
 }
+.home-wrapper-2 {
+  margin-block: 40px;
+}
 .home-wrapper .main-logo {
   width: 200px;
   vertical-align: middle;
