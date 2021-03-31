@@ -24,6 +24,10 @@ h1::after {
   display: flex;
   flex-direction: column;
 }
+.main-logo {
+  width: 200px;
+  margin: 0 auto;
+}
 .home-wrapper .col {
   text-align: center;
   display: flex;
@@ -41,6 +45,14 @@ h1::after {
 .map-wrapper {
   margin-block: 40px;
 }
+.map-wrapper h1 {
+  margin-bottom: 0;
+}
+.map-wrapper span {
+  font-size: 14px;
+  font-weight: 300;
+  display: block;
+}
 .map-wrapper .row + .row {
   margin-top: 20px;
 }
@@ -50,8 +62,9 @@ h1::after {
 .call-to-action {
   display: inline-block;
   color: #fff;
-  height: 45px;
-  width: 35%;
+  /* height: 45px; */
+  padding-inline: 60px;
+  padding-block: 5px;
   font-weight: 400;
   letter-spacing: 1px;
   text-decoration: none;
@@ -66,7 +79,21 @@ h1::after {
   background-position-x: 5%;
   background-position-y: center;
 }
-.home-wrapper img {
+.centered {
+  display: flex;
+  flex-grow: 1;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.call-to-action:hover {
+  color: #fff;
+  background-color: #b83723;
+}
+.home-wrapper .content img {
+  width: 200px;
+}
+.home-wrapper .main-logo {
   width: 200px;
   vertical-align: middle;
   text-align: center;
@@ -89,6 +116,20 @@ h1::after {
 .map-wrapper h3 {
   font-weight: bold;
   font-size: 24px;
+  max-width: 180px;
+  min-width: 180px;
+}
+.home-wrapper-2 img {
+  width: 100%;
+}
+.home-wrapper-2 p {
+  text-align: left;
+}
+.map-wrapper .col {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 .alaska h3 {
   color: #41513d;
@@ -97,32 +138,19 @@ h1::after {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
+  flex-direction: row;
+}
+.map-wrapper ul {
+  padding-inline-start: 80px;
 }
 .alaska .map-title-wrapper:before {
-  content: '';
-  display: inline-block;
-  width: 80px;
-  height: 80px;
-  vertical-align: middle;
   background-image: url('assets/target-alaska.png');
-  background-repeat: no-repeat;
-  background-size: contain;
-  margin-inline-end: 5px;
 }
-.nevada h3 , p {
+.nevada h3 {
   color: #eba633;
 }
 .nevada .map-title-wrapper:before {
-  content: '';
-  display: inline-block;
-  width: 60px;
-  height: 60px;
-  vertical-align: middle;
   background-image: url('assets/target-nevada.png');
-  background-repeat: no-repeat;
-  background-size: contain;
-  margin-inline-end: 5px;
 }
 .west-russia h3 {
  color:  #f6ed08;
@@ -142,130 +170,60 @@ h1::after {
 .georgia h3 {
   color: #bd4626;
 }
-.hawaii {
+.hawaii  h3 {
   color: #5d3641;
 }
-.guam {
+.guam  h3{
   color: #b23422;
 }
-.japan {
+.japan h3 {
   color:#6b1d1f;
 }
-.texas {
+.texas h3 {
   color:#f4e0e8;
 }
-.west-russia  .map-title-wrapper:before {
+.map-title-wrapper:before {
   content: '';
   display: inline-block;
-  width: 60px;
-  height: 60px;
+  width: 50px;
+  height: 50px;
   vertical-align: middle;
-  background-image: url('assets/target-west-russia.png');
   background-repeat: no-repeat;
   background-size: contain;
-  margin-inline-end: 5px;
+  margin-inline-end: 10px;
+}
+.west-russia  .map-title-wrapper:before {
+  background-image: url('assets/target-west-russia.png');
 }
 .calfornia .map-title-wrapper:before {
-  content: '';
-  display: inline-block;
-  width: 60px;
-  height: 60px;
-  vertical-align: middle;
   background-image: url('assets/target-cafornia.png');
-  background-repeat: no-repeat;
-  background-size: contain;
-  margin-inline-end: 5px;
 }
 .missouri .map-title-wrapper:before {
-  content: '';
-  display: inline-block;
-  width: 60px;
-  height: 60px;
-  vertical-align: middle;
   background-image: url('assets/target-missouri.png');
-  background-repeat: no-repeat;
-  background-size: contain;
-  margin-inline-end: 5px;
 }
 .russia-north .map-title-wrapper:before {
-  content: '';
-  display: inline-block;
-  width: 60px;
-  height: 60px;
-  vertical-align: middle;
   background-image: url('assets/target-east-russia.png');
-  background-repeat: no-repeat;
-  background-size: contain;
-  margin-inline-end: 5px;
 }
 .montana .map-title-wrapper:before {
-  content: '';
-  display: inline-block;
-  width: 60px;
-  height: 60px;
-  vertical-align: middle;
   background-image: url('assets/target-montana.png');
-  background-repeat: no-repeat;
-  background-size: contain;
-  margin-inline-end: 5px;
 }
 .georgia .map-title-wrapper:before {
-  content: '';
-  display: inline-block;
-  width: 60px;
-  height: 60px;
-  vertical-align: middle;
   background-image: url('assets/target-georgia.png');
-  background-repeat: no-repeat;
-  background-size: contain;
-  margin-inline-end: 5px;
 }
 .hawaii .map-title-wrapper:before {
-  content: '';
-  display: inline-block;
-  width: 60px;
-  height: 60px;
-  vertical-align: middle;
   background-image: url('assets/target-hawaii.png');
-  background-repeat: no-repeat;
-  background-size: contain;
-  margin-inline-end: 5px;
 }
 .japan .map-title-wrapper:before {
-  content: '';
-  display: inline-block;
-  width: 60px;
-  height: 60px;
-  vertical-align: middle;
   background-image: url('assets/target-japan.png');
-  background-repeat: no-repeat;
-  background-size: contain;
-  margin-inline-end: 5px;
 }
 .guam .map-title-wrapper:before {
-  content: '';
-  display: inline-block;
-  width: 60px;
-  height: 60px;
-  vertical-align: middle;
   background-image: url('assets/target-guam.png');
-  background-repeat: no-repeat;
-  background-size: contain;
-  margin-inline-end: 5px;
 }
 .texas .map-title-wrapper:before {
-  content: '';
-  display: inline-block;
-  width: 60px;
-  height: 60px;
-  vertical-align: middle;
   background-image: url('assets/target-texas.png');
-  background-repeat: no-repeat;
-  background-size: contain;
-  margin-inline-end: 5px;
 }
-p  {
-  color: inherit
+.card-discription {
+  text-align: left;
 }
 @media (max-width: 768px) {
   .details-wrapper .row {
@@ -277,6 +235,10 @@ p  {
   }
   .call-to-action {
     width: 90%;
+  }
+  .home-wrapper-2 .row-content {
+    display: flex;
+    flex-direction: column;
   }
   .map-wrapper .col {
     flex: 100%;
