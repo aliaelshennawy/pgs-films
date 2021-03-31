@@ -8,6 +8,22 @@ h1 {
   margin-block: 40px;
   font-weight: 700;
 }
+
+.dark {
+  background-color: rgba(0,0,0,0.8);
+  color: #fff;
+  width: 100%;
+}
+.dark-bg {
+  background-image: url('/assets/background-image.jpeg');
+  width: 100%;
+  background-size: cover;
+}
+.light {
+  background-color: #F6F6F6;
+  color: #000;
+  width: 100%;
+}
 h1::after {
   right: 0;
   display: block;
@@ -70,7 +86,7 @@ h1::after {
   text-decoration: none;
   line-height: 45px;
   text-align: center;
-  margin: 0 auto;
+  margin: 40px auto;
   border-radius: 5px;
   background-color: #d8462f;
   background-image: url('assets/down-arrow.png');
@@ -227,6 +243,7 @@ h1::after {
 }
 .card-discription {
   text-align: left;
+  font-weight: 400;
 }
 @media (max-width: 768px) {
   .details-wrapper .row {
